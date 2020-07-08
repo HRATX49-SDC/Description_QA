@@ -1,24 +1,22 @@
-"use strict";
+const express = require('express');
 
-var express = require('express');
+const path = require('path');
 
-var path = require('path');
+const db = require('./database/query.js');
 
-var db = require('./database/query.js');
+const compression = require('compression');
 
-var compression = require('compression');
-
-var app = express();
-var PORT = process.env.PORT || 5100;
+const app = express();
+const PORT = process.env.PORT || 5100;
 app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
-app.use(express["static"](path.join(__dirname, 'client', 'dist'))); // get searched cat
+app.use(express.static(path.join(__dirname, 'client', 'dist'))); // get searched cat
 
-app.get('/about/cat', function (req, res) {
-  db.getCats(req.query.catName, function (error, results) {
+app.get('/about/cat', (req, res) => {
+  db.getCats(req.query.catName, (error, results) => {
     if (error) {
       console.error('error getting query', error);
       res.sendStatus(404);
@@ -28,8 +26,8 @@ app.get('/about/cat', function (req, res) {
   });
 }); // get searched cat questions and answers
 
-app.get('/about/questions', function (req, res) {
-  db.getQuestions(req.query.catName, function (error, results) {
+app.get('/about/questions', (req, res) => {
+  db.getQuestions(req.query.catName, (error, results) => {
     if (error) {
       console.error('error getting query', error);
       res.sendStatus(404);
@@ -50,8 +48,8 @@ app.get('/about/questions', function (req, res) {
 //   });
 // });
 
-app.post('/about/question', function (req, res) {
-  db.addQuestion(req.body.question, function (error, results) {
+app.post('/about/question', (req, res) => {
+  db.addQuestion(req.body.question, (error, results) => {
     if (error) {
       console.error(error);
       res.sendStatus(404);
@@ -60,8 +58,8 @@ app.post('/about/question', function (req, res) {
     }
   });
 });
-app.post('/about/answer', function (req, res) {
-  db.addAnswer(req.body.answer, function (error, results) {
+app.post('/about/answer', (req, res) => {
+  db.addAnswer(req.body.answer, (error, results) => {
     if (error) {
       console.error(error);
       res.sendStatus(404);
@@ -70,6 +68,6 @@ app.post('/about/answer', function (req, res) {
     }
   });
 });
-app.listen(PORT, function () {
-  console.log("listening on port ".concat(PORT));
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`);
 });
