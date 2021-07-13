@@ -1,0 +1,512 @@
+.mainBox {
+  background-color: rgb(247, 247, 247) !important;
+  color: rgb(51, 51, 51);
+  max-width: 100%;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+
+}
+
+
+.heading {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-size-adjust: 100%;;
+  vertical-align: baseline;
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.25;
+  font-size: 23px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+
+}
+
+
+.tabBar {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(136, 136, 136);
+  line-height: 1.4285;
+  margin-left: 0 auto;
+}
+
+
+.tabList {
+  box-sizing: border-box;
+  padding: 4px 1px 0px;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: baseline;
+  display: table;
+}
+
+
+.tabHeader {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.4285;
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  text-align: center;
+  vertical-align: baseline;
+  display: table-cell;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.tabHeader:hover {
+  text-decoration: underline;
+  color: rgb(51, 51, 51);
+}
+
+
+
+.tabHeaderSelected {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.4285;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  vertical-align: baseline;
+  display: table-cell;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-bottom: 3px solid rgb(204, 0, 0);
+}
+
+
+.innerMargins {
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.innerBox {
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.highlightsHeader {
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.highlightsList {
+  background-color: white;
+  color: rgb(51, 51, 51);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+
+  list-style-type: disc;
+}
+
+.highlightsListItem {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: block;
+  flex: 0 1 auto;
+  list-style-type: disc;
+
+}
+
+.specifications {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.specFlex {
+  display: flex;
+  background-color: white;
+  color: rgb(51, 51, 51);
+  /* flex-wrap: wrap; */
+  align-items: stretch;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px
+}
+
+.spec {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: initial;
+  flex-basis: 50%;
+  max-width: 50%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.specDetail {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4285;
+  list-style-type: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid lightgray;
+}
+
+.specRes {
+  font-weight: normal;
+}
+
+.descript {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: initial;
+  flex-basis: 50%;
+  max-width: 50%;
+  padding-left: 16px;
+}
+
+.descriptDetail {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  flex-wrap: wrap;
+  padding-top: 16px;
+}
+
+.showMore {
+  padding: 16px;
+}
+
+.showMoreButton {
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(136, 136, 136);
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  touch-action: manipulation;
+  white-space: nowrap;
+  height: 35px;
+  font-size: 12px;
+  line-height: 1.4285;
+  padding: 6px 12px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.showMoreButton:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.shippingHeader {
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.shippingDetails {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.questionsBox {
+  margin-bottom: 16px;
+  display: block;
+  line-height: 1.4285;
+  color: rgb(51, 51, 51);
+
+}
+
+.question {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  line-height: 1.25;
+  vertical-align: baseline;
+  font-weight: bold;
+}
+
+.qUser {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  line-height: 1.4285;
+}
+
+.answerBox {
+  margin-left: 4px;
+  margin-top: 12px;
+  flex-basis: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto;
+  display: block;
+  border-bottom: 1px solid lightgray;
+}
+
+.answerA {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: initial;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto;
+  display: block;
+  line-height: 1.4285;
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.answer {
+  padding-left: 5px;
+  margin-left: initial;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto;
+  display: inline-block;
+  line-height: 1.4285;
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.aUser {
+  padding-left: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  line-height: 1.4285;
+}
+
+.helpful {
+  display: block;
+  padding-bottom: 16px;
+}
+
+.helpNotReport {
+  padding-bottom: 16px;
+  margin-left: 12px;
+  position: relative;
+  color: rgb(102, 102, 102);
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4285;
+}
+
+.answerIt {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+}
+
+.answerItButton {
+  color: rgb(51, 51, 51);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(136, 136, 136);
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  touch-action: manipulation;
+  white-space: nowrap;
+  height: 35px;
+  font-size: 12px;
+  line-height: 1.4285;
+  padding: 6px 12px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.answerItButton:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.askQBox {
+  display: block;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 1 auto;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin: 0px auto;
+}
+
+.largeWhiteButton {
+  /* margin-left: initial;
+  flex-basis: 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto; */
+  padding-left: 8px;
+  padding-right: 8px;
+  display: block;
+  flex-wrap: wrap;
+  color: rgb(51, 51, 51);
+  background-color: white;
+  border: 1px solid rgb(136, 136, 136);
+  text-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  touch-action: manipulation;
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.largeWhiteButton:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.largeRedButton {
+  /* margin-left: initial;
+  flex-basis: 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto; */
+  padding-left: 8px;
+  padding-right: 8px;
+  display: block;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  background-color: rgb(204, 0, 0);
+  border: 1px solid rgb(204, 0, 0);
+  text-align: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  touch-action: manipulation;
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  margin: 0px;
+  border-radius: 4px;
+}
+
+.largeRedButton:hover {
+  background-color: rgb(170, 1, 1);
+}
+
+.askQuesForm {
+  flex-basis: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto;
+  display: block;
+  line-height: 1.4285;
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+  margin: 0px auto;
+}
+
+.quesTextBox {
+  margin: 0px;
+  position: relative;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(51, 51, 51);
+  line-height: 1.4285;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(136, 136, 136);
+}
+
+.smallGrayText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(102, 102, 102);
+  font-size: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  line-height: 1.4285;
+  font-weight: normal;
+  vertical-align: top;
+  padding-bottom: 16px;
+}
+
+.submitQuesBox {
+  padding-top: 16px;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto;
+  display: block;
+  line-height: 1.4285;
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.answerIt {
+  flex-basis: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex: 0 0 auto;
+  display: block;
+  line-height: 1.4285;
+  color: rgb(51, 51, 51);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid lightgray;
+}
